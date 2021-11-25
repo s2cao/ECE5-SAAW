@@ -165,14 +165,14 @@
 <!----------------------------------------  BUTTON 5 ---------------------------------------->
       
       <div class ='center'>
-        <button type='button' onclick="toggleText5()" class="btn">Challenge #8</button>
+        <button type='button' onclick="toggleText5()" class="btn">Challenge #3</button>
       </div> <!--end of div class center -->
             
       <div class="interactive" id='interactive5' style='display: none'>
         <div class='box1'>
           <br>
           
-            <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png' class='imgmar'>
+            <img src = 'https://lh3.googleusercontent.com/dr80rblC_GQ5xjksdzkD4_l37wGCAqWJYFTUCYC4WZ3vCard8N9VQf2EnqcMsuHpsrs29SGc2YkXhiUSK5IqS_pBKkQyifVHomGAsyBcvXgIBWqikW0pc9IEDkquD7D2yjCV49Aa3w=w500' class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
             <p2>IMG1 Add a picture of your robot following a line 
@@ -182,13 +182,13 @@
           <p class='box2'>
             What was the best PID values that you used? How well did this track? Any limitations?
             <br><br>
-            &emsp; Answer here...
+            &emsp; We found the best values for PID to be P = 20, I = 50, and D = 50. Having the I and D set to the values around the middle gave it the best of both worlds in preventing overshooting and undershooting. The P value of 20 allowed for the robot to detect turns and adjust accordingly without turning the robot off the track. If the P value was too large, it would try to make a massive turn even with small discrepencies in a straight line.
             <br><br><br>
             What does PID stand for?  What is the purpose of the P, the I, and the D?  
             What steps did you take to choose the best values for your robot? 
             Explain this like you would for someone taking this course next year.
             <br><br>
-            &emsp; Answer here...
+            &emsp; PID stands for Proportional, Integral, and Derivative. The purpose of the P is to attempt to adjust after detecting an error between the desired valued and the actual value. If the value you want is higher than the value you get, the P constant will try to increase your value to the desired value. The I value takes the sum of previous errors and compares them. If the previous values are all much smaller than the desired value, then it'll try to raise the value at the rate it was before. The D value tries to take the change in the most recent error to find the rate of change. Using this, it will try to predict where the next error will be. We started by using just P with I and D at 0 to see how much error was needed for a normal turn from a straight line. From there, we adjusted I and D slightly to see if it would smooth out the turn or shoot it off track. Once we found the ideal points for both of them, we adjusted the speed to see how fast the robot could go before it would go too fast for the error to properly adjust its track.
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
@@ -203,9 +203,9 @@
         <div class='box1'>
           <br>
           <p class='box2'>
-            Insert a video of your robot in action!
+            The Mighty Duct makes its way across a loop track.
           </p> <!-- p is paragraph -->
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rusoU3QL4Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
